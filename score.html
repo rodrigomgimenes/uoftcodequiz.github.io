@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+
+	<!--- Basic Page Needs
+ 	 ================================================== -->
+	<meta charset="UTF-8" />
+	<meta name="description" content="Web APIs: Code Quiz">
+	<meta name="author" content="Rodrigo M. Gimenes">
+  
+	<title>Code Quiz</title>
+
+	<!-- Mobile Specific Metas
+     ================================================== -->
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+	<!-- CSS
+	 ================================================== -->
+	<link rel="stylesheet" type="text/css" href="./css/fonts.css"> 
+	<link rel="stylesheet" type="text/css" href="./css/styles.css">
+
+	<!-- Favicons
+     ================================================== -->
+	<link rel="shortcut icon" href="./favicon/quiz.png" />
+
+	<!-- jQuery
+     ================================================== -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body id="home">
+
+	<header id="header">
+		<div class="wrapper">
+			<h1>Highscore</h1>	
+		</div>
+	</header>
+
+	<section id="Content" class="wrapper"> 
+		<div class="container">
+			<!-- <h2 class="scoreinput">Your final score is:</h2> -->
+
+			<div class="counter-wrap-score" data-date-target="">
+
+				<div class="counter">
+					<div id="userscore" class="number">00</div>
+					<div class="caption">Final Score</div>
+				</div> 
+
+				<div class="counter-caption"><h2>out of</h2></div>
+
+				<div class="counter">
+					<div id="maxscore" class="number">00</div>
+					<div class="caption">Total</div>
+				</div> 
+
+			</div> 
+
+			<form action="#" class="subscribe-form">
+				<input id="initials" type="text" placeholder=" < Type your initials to save your score />">
+				<input id="savebutton" type="submit" value="Save">
+			</form> 
+		</div>
+	</section>
+
+	<footer id="footer">
+		<div id="social-media">
+			<ul> 
+				<li><a href="https://github.com/rodrigomgimenes" target="_blank"><i class="plus-size-icon fa fa-github"></i></a></li>
+			</ul>
+		</div>
+		<span class="copyright">&copy; Copyright 2020 <a href="./images/rmg.jpg" alt="rmg">RMG</a>. All right reserved</span>
+	</footer>
+
+	<!-- Javascript
+	 ================================================== -->
+	<script src="./javascript/script-score.js"></script>
+</body>
+</html>
