@@ -9,7 +9,7 @@ $( document ).ready( function() {
   // ====================================================================
   const MAXQUESTIONS = 10;
   var maxScoreInput  = document.querySelector( "#maxscore" );
-  var userScore      = document.querySelector( "userscore" );
+  var userScore      = document.querySelector( "#userscore" );
 
   // MAIN PROCEDURES
   // ====================================================================
