@@ -404,7 +404,10 @@ $( document ).ready( function() {
   }
 
   function keepScore () {
-    window.setlocalStorage = correctAnswers;
+    //window.setlocalStorage = correctAnswers;
+    // Store score
+    localStorage.setItem("finalscore", correctAnswers);
+
     window.location.href  = 'score.html?#';
   }
 
