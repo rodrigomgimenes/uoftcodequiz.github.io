@@ -220,7 +220,7 @@ a:hover {
 	margin-bottom: 5px; 
 }
 		
-.subscribe-form input[type="text"], .subscribe-form input[type="email"] {
+.subscribe-form input[type="text"] {
 	width: 82.5%;
 	padding: 10px 100px 10px 50px;
 	border: 2px solid #4c4551;
@@ -451,9 +451,7 @@ a:hover {
 	color: #464159;
 	text-align: end;
 	font-size: 1.15em;
-	font-weight: 500;
-	-webkit-transition: .3s ease;
-	transition: .3s ease; 
+	font-weight: 600;
 }
 
 .customized-form input[type="button"] {
@@ -472,9 +470,7 @@ a:hover {
 	letter-spacing: 1px;
 	z-index: 1;
 	outline: none;
-	-webkit-transition: .3s ease;
-	transition: .3s ease; 
-	/* cursor: pointer; */
+	cursor: pointer;
 }
 
 

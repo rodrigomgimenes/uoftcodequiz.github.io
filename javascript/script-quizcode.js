@@ -404,7 +404,7 @@ $( document ).ready( function() {
   }
 
   function keepScore () {
-    window.correctAnswers = correctAnswers;
+    window.setlocalStorage = correctAnswers;
     window.location.href  = 'score.html?#';
   }
 

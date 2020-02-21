@@ -8,6 +8,7 @@ $( document ).ready( function() {
   // VARIABLES
   // ====================================================================
   const MAXQUESTIONS = 10;
+
   var maxScoreInput  = document.querySelector( "#maxscore"  );
   var userScore      = document.querySelector( "#userscore" );
   var userInitials   = document.querySelector( "#initials"  );
@@ -15,22 +16,26 @@ $( document ).ready( function() {
   // FUNCTIONS
   // ====================================================================
   function createHighscoreLine () {
-    var formID = "form" + Date.now();
+    if ( userInitials.value != "" ) {
+      var formID = "form" + Date.now();
 
-    // Creating new Form
-    var newForm = $( "<form>" );
-    $( ".container" ).append( newForm );
-    newForm.attr( "action", "#" ).attr( "class", "customized-form" ).attr( "id", ( formID ) );
+      // Creating new Form
+      var newForm = $( "<form>" );
+      $( ".container" ).append( newForm );
+      newForm.attr( "action", "#" ).attr( "class", "customized-form" ).attr( "id", ( formID ) );
 
-    // Creating new Inputs
-    var firstInput = $( "<input>" );
-    $( "#" + formID ).append( firstInput );
-    // console.log ("userinitial", userInitials.value);
-    firstInput.attr( "id", ( "userinitials" + Date.now() ) ).attr( "type", "button" ).attr( "value", "rmg" );//userInitials.textContent );
+      // Creating new Inputs
+      var firstInput = $( "<input>" );
+      $( "#" + formID ).append( firstInput );
 
-    var secondInput = $( "<input>" );
-    $( "#" + formID ).append( secondInput );
-    secondInput.attr( "id", ( "currentscore" + Date.now() ) ).attr( "type", "text" ).attr( "readonly", "" ).attr( "placeholder", "Current Score: " + userScore.textContent );
+      //debugger
+
+      firstInput.attr( "id", ( "userinitials" + Date.now() ) ).attr( "type", "button" ).attr( "value", userInitials.value );
+
+      var secondInput = $( "<input>" );
+      $( "#" + formID ).append( secondInput );
+      secondInput.attr( "id", ( "currentscore" + Date.now() ) ).attr( "type", "text" ).attr( "readonly", "" ).attr( "placeholder", "Current Score: " + userScore.textContent );
+    }
   }
 
   // MAIN PROCEDURES
