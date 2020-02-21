@@ -31,19 +31,20 @@ $( document ).ready( function() {
       //debugger
 
       firstInput.attr( "id", ( "userinitials" + Date.now() ) ).attr( "type", "button" ).attr( "value", userInitials.value );
+      userInitials.value = "";
 
       var secondInput = $( "<input>" );
       $( "#" + formID ).append( secondInput );
-      secondInput.attr( "id", ( "currentscore" + Date.now() ) ).attr( "type", "text" ).attr( "readonly", "" ).attr( "placeholder", "Current Score: " + userScore.textContent );
+      secondInput.attr( "id", ( "currentscore" + Date.now() ) ).attr( "type", "text" ).attr( "readonly", "" ).attr( "placeholder", "Current Score: " + userScore.textContent ).attr( "style", "color: #252428;");
     }
   }
 
   // MAIN PROCEDURES
   // ====================================================================
-  // console.log ( "window.correctAnswers: ", window.correctAnswers );
+   console.log ( "finalscore: ", localStorage.getItem("finalscore") );
 
   maxScoreInput.textContent = MAXQUESTIONS;
-  //userScore.textContent     = window.correctAnswers;
+  userScore.textContent     = parseInt( localStorage.getItem("finalscore") ) < 10 ? "0" + localStorage.getItem("finalscore") : localStorage.getItem("finalscore");
 
   // ELEMENTS FUNCTIONS
   // ====================================================================

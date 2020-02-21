@@ -448,10 +448,10 @@ a:hover {
 	border: 2px solid #ffffff;
 	border-radius: 10px;
 	background-color: rgba(241, 243, 244, 0.5);
-	color: #464159;
+	color: #252428;
 	text-align: end;
 	font-size: 1.15em;
-	font-weight: 600;
+	font-weight: 700;
 }
 
 .customized-form input[type="button"] {
@@ -471,53 +471,4 @@ a:hover {
 	z-index: 1;
 	outline: none;
 	cursor: pointer;
-}
-
-
-/*
-=====================================================================
-*   Media Queries
-===================================================================== 
-*/
-@media(max-width:420px){
-	h1 {
-		float: initial;
-		text-align: center;
-		margin-left: 0px;
-		margin-bottom: 0px;
-	}
-
-	.styled div {
-		margin-bottom: 10px;
-	  	font-size: 40px;
-	 	font-weight: normal; 
-	  	text-align: center;
-	  	width: 80px; 
-	  	border-radius: 80px; 
-	  	height: 80px;  
-	}
-
-	#Content h2 {
-		margin: 0px 0px 0px 0px;
-		padding: 0px;
-		text-align: center;
-		font-size: 29px;
-		font-weight: 300;
-	}
-
-	.styled {
-		margin-bottom: 30px;
-	}
-
-	#quizlayout input[type="button"] {
-		margin-top: 10px;
-	}
-
-	#quizlayout input {
-		width: 80%;
-	}
-
-	#footer {
-		position: relative !important;
-	}
 }
